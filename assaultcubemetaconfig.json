@@ -1,6 +1,6 @@
 [
   {
-    "ConfigFile": "config/server.conf",
+    "ConfigFile": "config/servercmdline.txt",
     "AutoMap": true,
     "Importable": true,
     "ConfigType": "kvp",

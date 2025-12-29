@@ -2,7 +2,7 @@
   {
     "DisplayName": "Server Port",
     "Category": "AssaultCube:games",
-    "Subcategory": "Network:dns:1",
+    "Subcategory": "Server:dns:1",
     "Description": "UDP port the server listens on.",
     "Keywords": "port udp",
     "FieldName": "$ServerPort",
@@ -14,31 +14,43 @@
     "EnumValues": {}
   },
   {
+      "DisplayName": "Server IP Binding",
+      "Category": "AssaultCube:games",
+      "Subcategory": "Server:dns:1",
+      "Description": "",
+      "Keywords": "",
+      "FieldName": "$ApplicationIPBinding",
+      "InputType": "text",
+      "Hidden": true,
+      "ParamFieldName": "bind_address",
+      "IncludeInCommandLine": false,
+      "EnumValues": {}
+  },
+  {
     "DisplayName": "Server Name",
     "Category": "AssaultCube:games",
-    "Subcategory": "Server:badge:2",
+    "Subcategory": "Server:dns:1",
     "Description": "Shown in the server browser.",
-    "Keywords": "name hostname",
+    "Keywords": "server,name,server_name",
     "FieldName": "ServerName",
     "Hidden": false,
     "InputType": "text",
-    "ParamFieldName": "servername",
+    "ParamFieldName": "ServerName",
     "DefaultValue": "AMP AssaultCube Server",
-    "Required": false,
+    "Placeholder": "AMP AssaultCube Server",
     "EnumValues": {}
   },
   {
     "DisplayName": "Max Clients",
     "Category": "AssaultCube:games",
-    "Subcategory": "Server:users:3",
+    "Subcategory": "Server:dns:1",
     "Description": "Maximum number of clients.",
-    "Keywords": "slots players",
+    "Keywords": "slots,players",
     "FieldName": "MaxClients",
     "Hidden": false,
     "InputType": "number",
     "ParamFieldName": "maxclients",
     "DefaultValue": "16",
-    "Required": false,
     "EnumValues": {}
   }
 ]
