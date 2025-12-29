@@ -1,0 +1,10 @@
+[
+  {
+    "UpdateStageName": "AssaultCube Download+Extract",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-lc \"set -euo pipefail;\ncd '{{$FullBaseDir}}';\nmkdir -p assaultcube;\nurl='https://github.com/assaultcube/AC/releases/download/v1.3.0.2/AssaultCube_v1.3.0.2_linux.tar.gz';\ntmp='assaultcube/ac.tar.gz';\necho 'Downloading AssaultCube...';\nwget -qO \\\"$tmp\\\" \\\"$url\\\";\necho 'Extracting...';\n( tar -xzf \\\"$tmp\\\" -C assaultcube --strip-components=1 2>/dev/null || tar -xzf \\\"$tmp\\\" -C assaultcube );\nrm -f \\\"$tmp\\\";\nchmod +x assaultcube/bin_unix/linux_64/ac_server || true;\nmkdir -p assaultcube/config;\nif [ ! -f assaultcube/config/server.conf ]; then\n  cat > assaultcube/config/server.conf <<'EOF'\nserverport {{$ServerPort}}\nmaxclients {{MaxClients}}\nservername \\\"{{ServerName}}\\\"\nEOF\nfi\necho 'AssaultCube installed.'\"\n",
+    "SkipOnFailure": false
+  }
+]

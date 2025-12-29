@@ -1,0 +1,44 @@
+[
+  {
+    "DisplayName": "Server Port",
+    "Category": "AssaultCube:games",
+    "Subcategory": "Network:dns:1",
+    "Description": "UDP port the server listens on.",
+    "Keywords": "port udp",
+    "FieldName": "$ServerPort",
+    "Hidden": false,
+    "InputType": "number",
+    "ParamFieldName": "serverport",
+    "DefaultValue": "28763",
+    "Required": true,
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Server Name",
+    "Category": "AssaultCube:games",
+    "Subcategory": "Server:badge:2",
+    "Description": "Shown in the server browser.",
+    "Keywords": "name hostname",
+    "FieldName": "ServerName",
+    "Hidden": false,
+    "InputType": "text",
+    "ParamFieldName": "servername",
+    "DefaultValue": "AMP AssaultCube Server",
+    "Required": false,
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Max Clients",
+    "Category": "AssaultCube:games",
+    "Subcategory": "Server:users:3",
+    "Description": "Maximum number of clients.",
+    "Keywords": "slots players",
+    "FieldName": "MaxClients",
+    "Hidden": false,
+    "InputType": "number",
+    "ParamFieldName": "maxclients",
+    "DefaultValue": "16",
+    "Required": false,
+    "EnumValues": {}
+  }
+]
